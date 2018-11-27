@@ -1,0 +1,46 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8010
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    io.kauri: DEBUG
+    net.consensys: DEBUG
+    net.consensys.configs: ERROR
+    org.web3j.protocol.websocket.WebSocketService: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c: %M - %m%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c: %M - %m%n"
+  file: /logs/application.log
+
+ahken:
+  scripts:
+    location: ${SCRIPTS_LOCATION:/Users/craig/ahken/scripts}
+  defaultIdentifier: "0x4d91838268f6d6D4e590e8fd2a001Cd91c32e7A4"
+  ipfs:
+    host: localhost
+    port: 5001
+
+#Eventeum Settings
+ethereum:
+  node:
+    url: wss://rinkeby.infura.io/ws
+    healthcheck:
+      pollInterval: 2000
+  blockStrategy: PUBSUB
+
+eventStore:
+  type: DB
+
+broadcaster:
+  type: NONE
+  cache:
+      expirationMillis: 6000000
+  event:
+    confirmation:
+      numBlocksToWait: 0
+      numBlocksToWaitForMissingTx: 100
+  multiInstance: false
+#End of Eventeum Settings
