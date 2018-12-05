@@ -27,7 +27,7 @@ ahken:
     host: localhost
     port: 5001
   db:
-    location: ${DB_LOCATION:/Users/craig/ahken/db/db.dat}
+    location: ${DB_LOCATION:/Users/craig/ahken/db}
 
 #Eventeum Settings
 ethereum:
