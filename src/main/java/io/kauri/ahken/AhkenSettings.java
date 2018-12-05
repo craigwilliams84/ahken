@@ -19,4 +19,7 @@ public class AhkenSettings {
 
     @Value("${ahken.ipfs.port}")
     private Integer ahkenIpfsPort;
+
+    @Value("${ahken.db.location}")
+    private String dbLocation;
 }

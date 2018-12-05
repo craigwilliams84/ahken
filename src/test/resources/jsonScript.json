@@ -1,0 +1,16 @@
+{
+  "contractAddress": "0x731a10897d267e19b34503ad902d0a29173ba4b1",
+  "eventSpecification": {
+    "eventName": "TestEvent",
+    "indexedParameterDefinitions": [
+      {"position": 0, "type": "ADDRESS"}],
+    "nonIndexedParameterDefinitions": [
+      {"position": 1, "type": "STRING"}]
+  },
+  "ipfsHashStrategy": {
+    "type": "eventParameterHash",
+    "id": "0x00a329c0648769a73afac7f9381e08fb43dbea72",
+    "idPosition": 0,
+    "hashPositions": [1]
+  }
+}

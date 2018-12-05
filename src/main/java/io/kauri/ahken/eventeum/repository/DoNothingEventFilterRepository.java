@@ -1,4 +1,4 @@
-package io.kauri.ahken.repository.eventeum;
+package io.kauri.ahken.eventeum.repository;
 
 import java.util.Collections;
 import java.util.Optional;

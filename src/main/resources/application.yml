@@ -3,9 +3,13 @@ server:
     uri-encoding: UTF-8
   port: 8010
 
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
 logging:
   level:
-    org.springframework.web: ERROR
+    org.springframework.web: DEBUG
     io.kauri: DEBUG
     net.consensys: DEBUG
     net.consensys.configs: ERROR
@@ -22,6 +26,8 @@ ahken:
   ipfs:
     host: localhost
     port: 5001
+  db:
+    location: ${DB_LOCATION:/Users/craig/ahken/db/db.dat}
 
 #Eventeum Settings
 ethereum:
